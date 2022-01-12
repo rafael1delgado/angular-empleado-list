@@ -1,5 +1,11 @@
 <div class="container">
-
+<app-count-empleados
+  [todos]="getTotalEmpleados()"
+  [totalMasculinos]="getTotalMasculinos()"
+  [totalFemeninos]="getTotalFemeninos()"
+  (countRadioButtonChange)="empleadoCountRadioButtonChange($event)"
+>
+</app-count-empleados>
   <div class="card mt-3">
     <div class="card-body">
       <table class="table">
