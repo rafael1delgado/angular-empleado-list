@@ -4,31 +4,34 @@
       <input
         class="form-check-input"
         [(ngModel)]="radioButtonSeleccionado"
+        (change)="radioChange()"
         type="radio"
         name="sexo"
         id="todos"
         value="Todos">
-      <label class="form-check-label" for="todos">Todos({{ getTotalEmpleados() }})</label>
+      <label class="form-check-label" for="todos">Todos({{ todos }})</label>
     </div>
     <div class="form-check form-check-inline">
       <input
       class="form-check-input"
       [(ngModel)]="radioButtonSeleccionado"
+      (change)="radioChange()"
       type="radio"
       name="sexo"
       id="femenino"
       value="Femenino">
-      <label class="form-check-label" for="femenino">Femenino({{ getTotalFemeninos() }})</label>
+      <label class="form-check-label" for="femenino">Femenino({{ totalFemeninos }})</label>
     </div>
     <div class="form-check form-check-inline">
       <input
         class="form-check-input"
         [(ngModel)]="radioButtonSeleccionado"
+        (change)="radioChange()"
         type="radio"
         name="sexo"
         id="masculino"
         value="Masculino">
-      <label class="form-check-label" for="mascuilino">Masculino({{ getTotalMasculinos() }})</label>
+      <label class="form-check-label" for="mascuilino">Masculino({{ totalMasculinos }})</label>
     </div>
   </div>
 </div>
